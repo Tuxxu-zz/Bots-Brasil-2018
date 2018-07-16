@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Maior Conferência de Bots no Brasil">
+	  <meta name="keywords" content="BOT, CHATBOT, CONFERENCIA, MEETUP">
+	  <meta name="author" content="BotsBrasil">
+    <meta property="og:image" content="img/share.png"/>
+	  <meta property="og:title" content="Conferência Bots Brasil"/>
+	  <meta property="og:site_name" content="A Bots Brasil Conf é primeira e mais importante conferência realizada em São Paulo
+e organizada pela maior comunidade de pessoas interessadas em Chatbots do Brasil. Vamos trazer cases, indicadores do mercado e conteúdos relacionados a design, desenvolvimento e negócios para chatbots."/>
+	  <meta property="og:url" content="http://conf.botsbrasil.com.br"/>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Conferência Bots Brasil 2018</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#969696">
+  </head>
+  <body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106555484-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+      gtag('config', 'UA-106555484-1');
+    </script>
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <!-- <li><a href="#">Agenda</a></li>
+        <li><a href="#">Patrocínio</a></li>
+        <li><a href="#">Local</a></li> -->
+        <li><a href="http://bit.ly/2NQi6Tr" target="_blank">Facebook</a></li>
+        <li><a href="http://bit.ly/2zGjB3z" target="_blank">Medium</a></li>
+        <li class="buy-menu"><a href="http://bit.ly/2Lccpk4" target="_blank">Comprar Ingresso</a></li>
+   </ul>
+    </nav>
+    <figure class="buy">
+      <a href="http://bit.ly/2Lccpk4" target="_blank"><img src="img/buy-btn.svg" alt="Comprar ingresso"> </a>
+    </figure>
+    <section class="hero is-success is-fullheight" id="home">
+      <div class="hero-body">
+        <div class="container is-fluid is-flex is-horizontal-center">
+          <img class="logo" src="img/logo.svg" alt="Conferência Bots Brasil 2018">
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-success is-fullheight">
+      <div class="hero-body">
+        <div class="container is-fluid is-flex is-horizontal-center">
+          <p>Um evento feito por <span class="underline">humanos</span> para saber mais sobre como<br>o mercado anda <span class="underline">conversando com máquinas.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-success is-fullheight" id="sobre">
+      <div class="hero-body pattern">
+          <div class="about container is-fluid is-flex is-horizontal-center">
+            <p>Assim como em vários aspectos da cultura moderna, de uma certa forma, voltamos aos anos 80: vemos isso na moda, música, filmes<br>e agora... estamos conversando com máquinas.<br>
+            <br>
+            Como uma <span class="underline">evolução do ano passado,</span> esta conferência tem o objetivo de conectar<br>
+            pessoas de diferentes áreas e apresentar discussões sobre como o mercado vem converando os com bots.<br>
+            <br>
+            Afinal, será que:<br>
+            <br>
+            <span style="font-weight: bold; line-height: 26px; letter-spacing: 0.1em; text-transform: uppercase;">quando as máquinas falam,<br>
+            a conversa fica mais interessante?</p></span>
+          </div>
+        </div>
+    </section>
+    <footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p><span class="underline">Club Homs</span> - Av. Paulista, 735 - Bela Vista, São Paulo/SP</p>
+    </div>
+  </div>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
+  </body>
+</html>
