@@ -121,6 +121,26 @@ ul{
   -webkit-transition: 2s; /* Safari */
   transition:  2s;
 }
+.unificada {
+  border: #FF0099 10px solid;
+  -webkit-transition: 0.5s; /* Safari */
+  transition: 0.5s;
+}
+.unificada:hover {
+  border: #FF0099 4px solid;
+  background-color: #FF0099;
+  color: white;
+}
+.title-card{
+  font-weight: bold;
+  font-size: x-large;
+  margin: 10px 10px 4px 10px;
+}
+.sub-card{
+  font-size: 12px;
+  font-weight: 500;
+  margin: 4px 10px 10px 10px;
+}
 .buy{
   position: fixed;
   top: calc(100vh - 30px);
@@ -161,9 +181,18 @@ footer{
 .buy-menu{
   display: none;
 }
+
+.column.is-one-third,.column.is-one-third-tablet{
+  flex:none;
+  width:25% !important;
+}
 @media only screen and (max-width: 768px) {
+  .column.is-one-third,.column.is-one-third-tablet{
+    flex:none;
+    width:100% !important;
+  }
   .sympla{
-    margin: 0px !important;;
+    margin: 0px !important;
   }
   .buy{
     display: none;
