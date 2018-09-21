@@ -54,9 +54,15 @@ h1{
 }
 .about{
   width: 520px;
-  margin: 0% 35% 0% 35% !important;
+  margin: 0% 30% 0% 30% !important;
   height: auto;
   background: #00FFB2;FE0C9D
+}
+.promo-video{
+  background: url(img/dot.png);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 .sympla{
   width: 520px;
@@ -131,6 +137,34 @@ ul{
   background-color: #FF0099;
   color: white;
 }
+.criativa {
+  border: #9E00FF 10px solid;
+  -webkit-transition: 0.5s; /* Safari */
+  transition: 0.5s;
+}
+.criativa:hover {
+  border: #9E00FF 4px solid;
+  background-color: #9E00FF;
+  color: white;
+}
+.business {
+  border: #00FFB2 10px solid;
+  -webkit-transition: 0.5s; /* Safari */
+  transition: 0.5s;
+}
+.business:hover {
+  border: #00FFB2 4px solid;
+  background-color: #00FFB2;
+}
+.tecnica {
+  border: #FFC000 10px solid;
+  -webkit-transition: 0.5s; /* Safari */
+  transition: 0.5s;
+}
+.tecnica:hover {
+  border: #FFC000 4px solid;
+  background-color: #FFC000;
+}
 .title-card{
   font-weight: bold;
   font-size: x-large;
@@ -140,6 +174,34 @@ ul{
   font-size: 12px;
   font-weight: 500;
   margin: 4px 10px 10px 10px;
+}
+.talk-card{
+  font-weight: 600;
+  margin: 10px 10px 10px 10px;
+  font-size: 16px;
+}
+.md-content p {
+  text-align: left;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  margin: 40px;
+}
+#unificada .modal-card-foot, #unificada .modal-card-head{
+  background: #FF0099 !important;
+  border-radius: 0 !important;
+}
+#criativa .modal-card-foot, #criativa .modal-card-head{
+  background: #9E00FF !important;
+  border-radius: 0 !important;
+}
+#tecnica .modal-card-foot, #criativa .modal-card-head{
+  background: #FFC000 !important;
+  border-radius: 0 !important;
+}
+#business .modal-card-foot, #criativa .modal-card-head{
+  background: #00FFB2 !important;
+  border-radius: 0 !important;
 }
 .buy{
   position: fixed;
@@ -181,16 +243,86 @@ footer{
 .buy-menu{
   display: none;
 }
-
+.card-info{
+  margin: 0px 200px 100px 200px;
+}
 .column.is-one-third,.column.is-one-third-tablet{
   flex:none;
   width:25% !important;
 }
+.caption-mobile{
+  display: none;
+}
 @media only screen and (max-width: 768px) {
+  .caption-mobile{
+    display: block;
+  }
+  .card-info {
+    margin: 0px 20px 200px 20px;
+  }
+  .criativa{
+    background-color: #9E00FF !important;
+    color: white !important;
+  }
+  .tecnica{
+    background-color: #FFC000 !important;
+  }
+  .business{
+    background-color: #00FFB2 !important;
+  }
+  .unificada {
+    background-color: #FF0099 !important;
+    color: white !important;
+  }
   .column.is-one-third,.column.is-one-third-tablet{
     flex:none;
     width:100% !important;
   }
+  .sympla{
+    margin: 0px !important;
+  }
+  .buy{
+    display: none;
+  }
+  .about {
+    font-size: 30px;
+    margin: 0% 10% 0% 10% !important;
+}
+  .menu{
+    display: none;
+  }
+  .buy-menu{
+    display:block;
+  }
+  .navigation{
+    display: block;
+  }
+  #menuToggle{
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .caption-mobile{
+    display: block;
+  }
+  .card-info {
+    margin: 0px 20px 200px 20px;
+  }
+  .criativa{
+    background-color: #9E00FF !important;
+    color: white !important;
+  }
+  .tecnica{
+    background-color: #FFC000 !important;
+  }
+  .business{
+    background-color: #00FFB2 !important;
+  }
+  .unificada {
+    background-color: #FF0099 !important;
+    color: white !important;
+  }
+
   .sympla{
     margin: 0px !important;
   }
