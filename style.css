@@ -195,11 +195,11 @@ ul{
   background: #9E00FF !important;
   border-radius: 0 !important;
 }
-#tecnica .modal-card-foot, #criativa .modal-card-head{
+#tecnica .modal-card-foot, #tecnica .modal-card-head{
   background: #FFC000 !important;
   border-radius: 0 !important;
 }
-#business .modal-card-foot, #criativa .modal-card-head{
+#business .modal-card-foot, #business .modal-card-head{
   background: #00FFB2 !important;
   border-radius: 0 !important;
 }
