@@ -40,7 +40,15 @@ h1{
   color: white;
   font-weight: bold;
 }
-
+.underline:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20px;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+}
 .pattern{
    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAYAAABmBXS+AAAAKElEQVQoU2NkQAOfPn36z8fHx4gsjMIBSdBYEch4dHeh8+ntJqqFEwAIGifgopigyQAAAABJRU5ErkJggg==) repeat;
    background-color: white;
@@ -254,6 +262,9 @@ footer{
   display: none;
 }
 @media only screen and (max-width: 768px) {
+  .exit-popup, .modal, .modal-backdrop, #ouibounce-modal{
+    display: none !important;
+  }
   .caption-mobile{
     display: block;
   }
@@ -302,6 +313,9 @@ footer{
   }
 }
 @media only screen and (max-width: 1024px) {
+  .exit-popup, .modal, .modal-backdrop, #ouibounce-modal{
+    display: none !important;
+  }
   .caption-mobile{
     display: block;
   }
@@ -433,4 +447,65 @@ footer{
 }
 #menuToggle input:checked ~ ul{
   transform: none;
+}
+.modal-backdrop{
+  z-index: 1 !important;
+}
+.modal-body{
+	height: 410px;
+  width: 5188px;
+	background: url("http://conf.botsbrasil.com.br/img/background-popup.png") repeat-x;
+  animation: slide 25s linear infinite;
+}
+.exit-popup{
+overflow: hidden !important;
+width: 600px !important;
+height: 400px !important;
+background: #FFFFFF;
+border: 10px solid #FF0099;
+border-radius: 0;
+}
+@keyframes slide{
+  0%{
+    transform: translate3d(0, -10px, 0);
+  }
+  100%{
+    transform: translate3d(-2594px, -10px, 0px);
+  }
+}
+.modal-cta{
+position: fixed;
+width: 300px;
+height: 300px;
+background: #FF0099;
+z-index: 2;
+margin-top: 40px;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+.modal-cta h1{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+line-height: 25px;
+font-size: 16px;
+margin: 25px;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+}
+.btn-popup{
+position: absolute;
+width: 250px;
+height: 40px;
+background: #FFC000;
+z-index: 4;
+margin-left: 25px;
+border: 0;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+line-height: 19px;
+font-size: 14px;
+letter-spacing: 0.1em;
+color: #333333;
 }
