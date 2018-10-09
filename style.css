@@ -262,7 +262,14 @@ footer{
   display: none;
 }
 @media only screen and (max-width: 768px) {
-  .exit-popup, .modal, .modal-backdrop, #ouibounce-modal{
+  .modal-card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 50px;
+    overflow: hidden;
+  }
+  .exit-popup, .modal-backdrop, #ouibounce-modal{
     display: none !important;
   }
   .caption-mobile{
@@ -313,7 +320,7 @@ footer{
   }
 }
 @media only screen and (max-width: 1024px) {
-  .exit-popup, .modal, .modal-backdrop, #ouibounce-modal{
+  .exit-popup, .modal-backdrop, #ouibounce-modal{
     display: none !important;
   }
   .caption-mobile{
@@ -458,12 +465,12 @@ footer{
   animation: slide 25s linear infinite;
 }
 .exit-popup{
-overflow: hidden !important;
-width: 600px !important;
-height: 400px !important;
-background: #FFFFFF;
-border: 10px solid #FF0099;
-border-radius: 0;
+  overflow: hidden !important;
+  width: 600px !important;
+  height: 400px !important;
+  background: #FFFFFF;
+  border: 10px solid #FF0099;
+  border-radius: 0;
 }
 @keyframes slide{
   0%{
@@ -474,38 +481,47 @@ border-radius: 0;
   }
 }
 .modal-cta{
-position: fixed;
-width: 300px;
-height: 300px;
-background: #FF0099;
-z-index: 2;
-margin-top: 40px;
-margin-left: 25px;
-margin-bottom: 25px;
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background: #FF0099;
+  z-index: 2;
+  margin-top: 40px;
+  margin-left: 25px;
+  margin-bottom: 25px;
 }
 .modal-cta h1{
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-line-height: 25px;
-font-size: 16px;
-margin: 25px;
-letter-spacing: 0.1em;
-color: #FFFFFF;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 14px;
+  margin: 25px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
 }
 .btn-popup{
-position: absolute;
-width: 250px;
-height: 40px;
-background: #FFC000;
-z-index: 4;
-margin-left: 25px;
-border: 0;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-line-height: 19px;
-font-size: 14px;
-letter-spacing: 0.1em;
-color: #333333;
+  cursor: pointer;
+  position: absolute;
+  width: 250px;
+  height: 40px;
+  background: #FFC000;
+  z-index: 4;
+  margin-left: 25px;
+  border: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #333333;
+  -webkit-transition: 0.5s; /* Safari */
+  transition: 0.5s;
+}
+.btn-popup:hover{
+  height: 50px;
+  background-color: #00FFB2;
+  -webkit-transition: 0.5s; /* Safari */
+  transition: 0.5s;
 }
