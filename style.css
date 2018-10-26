@@ -267,7 +267,14 @@ footer{
 .caption-mobile{
   display: none;
 }
+.mobile-cta {
+  display: none !important;
+}
+
 @media only screen and (max-width: 768px) {
+  .mobile-cta {
+    display: block !important;
+  }
   .modal-card-title {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -326,6 +333,9 @@ footer{
   }
 }
 @media only screen and (max-width: 1024px) {
+  .mobile-cta {
+    display: block !important;
+  }
   .exit-popup, .modal-backdrop, #ouibounce-modal{
     display: none !important;
   }
