@@ -120,8 +120,16 @@ $("#modal-furlan").click(function() {
 $(".modal-furlan").addClass("is-active");
 });
 
-$("#xxx").click(function() {
-$(".xxx").addClass("is-active");
+$("#modal-dianalee").click(function() {
+$(".modal-dianalee").addClass("is-active");
+});
+
+$("#modal-mazon").click(function() {
+$(".modal-mazon").addClass("is-active");
+});
+
+$("#modal-ferrario").click(function() {
+$(".modal-ferrario").addClass("is-active");
 });
 
 $("#modal-rabello").click(function() {
