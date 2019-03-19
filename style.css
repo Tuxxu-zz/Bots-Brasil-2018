@@ -85,8 +85,19 @@ h1{
   letter-spacing: 0.1em;
   margin: 60px;
 }
+.header-bar {
+  background: #00FFB2;
+}
+#header-bar{
+  font-size: 20px;
+  display: block;
+  margin: 10px;
+}
+#header-bar a:link, a:visited, a:active{
+ color: #FF0099;
+}
 nav.menu{
-  margin-top: 7%;
+  margin-top: 3%;
   position: fixed;
   float:left;
   writing-mode:tb-rl;/*IE*/
@@ -113,7 +124,7 @@ li {
   font-style: normal;
   font-weight: normal;
   line-height: normal;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.1em;
   color: #333333;
   -webkit-transition:  2s; /* Safari */
@@ -270,8 +281,19 @@ footer{
 .mobile-cta {
   display: none !important;
 }
-
+#header-bar-mobile{
+  display: none;
+}
 @media only screen and (max-width: 768px) {
+  #header-bar{
+    display: none;
+  }
+  #header-bar-mobile{
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .mobile-cta {
     display: block !important;
   }
@@ -332,7 +354,16 @@ footer{
     display: block !important;
   }
 }
+
+@media only screen and (max-width: 425px){
+  html {
+    min-width: 437px !important;
+  }
+}
 @media only screen and (max-width: 1024px) {
+  .table td{
+    height: 200px !important;
+  }
   .mobile-cta {
     display: block !important;
   }
@@ -540,4 +571,64 @@ footer{
   background-color: #00FFB2;
   -webkit-transition: 0.5s; /* Safari */
   transition: 0.5s;
+}
+.td-reset{
+  border: none !important;
+}
+.table td{
+  vertical-align: middle !important;
+  font-size: 14px;
+}
+.table td:hover{
+  background-color: rgba(219, 219, 219, 0.19);
+}
+.td-hour{
+  text-align: center;
+  font-size: 18px
+}
+.td-line{
+  border-bottom: 1px solid #dbdbdb !important;
+}
+.td-hour b{
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 25px;
+  font-size: 24px;
+  margin-right: 2px;
+}
+.td-criativa{
+  border: none !important;
+  border-left: 5px solid #9E00FF !important;
+  padding-botton: 20px !important;
+}
+.table .td-criativa:hover{
+background-color: rgba(158, 0, 255, 0.18); !important;
+}
+.td-business{
+  border: none !important;
+  border-left: 5px solid #00FFB2 !important;
+}
+.table .td-business:hover{
+background-color: rgba(0, 255, 178, 0.24); !important;
+}
+.td-tecnica{
+  border: none !important;
+  border-left: 5px solid #FFC000 !important;
+}
+.table .td-tecnica:hover{
+background-color: rgba(255, 192, 0, 0.39); !important;
+}
+.td-unificada{
+
+  border-left: 5px solid #FF0099 !important;
+}
+.table .td-unificada:hover{
+background-color: rgba(255, 0, 153, 0.22); !important;
+}
+.table{
+  width: 70%;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 14px;
 }

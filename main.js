@@ -120,6 +120,10 @@ $("#modal-furlan").click(function() {
 $(".modal-furlan").addClass("is-active");
 });
 
+$("#modal-miro").click(function() {
+$(".modal-miro").addClass("is-active");
+});
+
 $("#modal-dianalee").click(function() {
 $(".modal-dianalee").addClass("is-active");
 });
